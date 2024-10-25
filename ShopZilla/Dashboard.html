@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopZella Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ShopZella Dashboard</h1>
+
+        <!-- Manage Products Section -->
+        <div class="manage-section">
+            <h2>Manage Products</h2>
+            <div class="add-product">
+                <input type="text" id="productName" placeholder="Product Name" required>
+                <input type="number" id="productPrice" placeholder="Product Price" required>
+                <input type="text" id="productImage" placeholder="Image URL" required>
+                <button id="addProductButton">Add Product</button>
+            </div>
+            <div id="productList" class="product-list"></div>
+        </div>
+
+        <!-- Manage Orders Section -->
+        <div class="manage-section">
+            <h2>Manage Orders</h2>
+            <div id="orderList" class="order-list">
+                <p>No orders yet.</p>
+            </div>
+            
+        </div>
+
+        <!-- Manage Users Section -->
+        <div class="manage-section">
+            <h2>Manage Users</h2>
+            <div id="userList" class="user-list">
+                <p>No users yet.</p>
+            </div>
+        </div>
+
+        <!-- Analytics Section -->
+        <div class="analytics-section">
+            <h2>Analytics</h2>
+            <p>Analytics will be displayed here.</p>
+        </div>
+    </div>
+
+
+    <script src="Dashboard.js"></script>
+</body>
+</html>

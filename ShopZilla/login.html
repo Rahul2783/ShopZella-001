@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" href="login.css">
+
+<body>
+    <h1>Login/Registration to ShopZella</h1>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="https://formsubmit.co/el/vadezu" method="POST">
+                <h2>Create Account</h2>
+                <div id="signUpMessage" class="messageDiv" style="display: none;"></div>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" id="name" required/>
+                <input type="phone" placeholder="Mobile number" id="phone" required/>
+                <input type="email" placeholder="Email" id="email" required/>
+                <input type="password" placeholder="Password" id="password" required/>
+                <button class="enter pad" id="sign-In">Sign In</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h2>Log In</h2>
+                <div id="signInMessage" class="messageDiv" style="display: none;"></div>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" id="email" required/>
+                <input type="password" placeholder="Password" id="password" required/>
+                <button type="submit" class="enter" id="login">Log In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h2>Already Have ShopZella. </h2>
+                    <p>Click on the LogIn button.</p>
+                    <button class="ghost" id="signIn">Log In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h2>Don't have ShopZella account</h2>
+                    <p>Click on the Register button.</p>
+                    <button class="ghost" id="signUp">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script type="module" src="firebase.js" defer></script>
+</body>
+
+</html>
